@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sort.css" />
+    <title>Bucket Sort</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="bars_container" class="bars_container">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <div class="buttons_container">
+        <h1>Bucket Sort</h1>
+        <input type="range" id="bars_slider" min="5" max="100" value="100" />
+        <label for="bars_slider"
+          >عدد البارات : <span id="bars_count">10</span></label
+        >
+        <input
+          dir="rtl"
+          type="range"
+          id="speed_slider"
+          min="1"
+          max="200"
+          value="60"
+        />
+        <label for="speed_slider">سرعة الترتيب </label>
+        <button id="randomize_array_btn" class="btn">
+          مــصـفـوفـة عـشـوائـيـة
+        </button>
+        <button id="sort_btn" class="btn">تـــرتـــيـــب</button>
+        <button onclick="location.href='index.html'" class="btn">
+          الرجوع للقائمة الرئيسية
+        </button>
+      </div>
+    </div>
+
+    <script src="bucket.js"></script>
+  </body>
+</html>
